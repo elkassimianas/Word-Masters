@@ -21,6 +21,7 @@
     font-weight: bold;
     font-size: 30px;
     font-style: normal;
+    pointer-events: none;
 }
 
 .word-block {
