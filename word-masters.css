@@ -24,7 +24,24 @@
     pointer-events: none;
 }
 
+.color-not-valid {
+    background-color: #888888;
+}
+
+.color-valid {
+    background-color: #016400;
+}
+
+.color-wrong-place {
+    background-color: #DAA520;
+}
+
 .word-block {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.warning-border {
+    border: 2px solid red; /* Change color as needed */
+    transition: border 0.3s ease-in-out;
 }
