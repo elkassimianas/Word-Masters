@@ -11,6 +11,53 @@
     border-bottom: 2px solid black;
 }
 
+.info-bar {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.show {
+    visibility: visible;
+}
+
+.colorRotate {
+    animation: colorRotate .5s linear 0s infinite;
+}
+
+.spiral {
+    font-size: 40px;
+    animation: spin 1.5s linear infinite;
+}
+
+/* rotates clockwise indefinitely */
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+
 .letter-box {
     border: 3px solid #CCCCCC;
     width: 45px;
@@ -26,14 +73,17 @@
 
 .color-not-valid {
     background-color: #888888;
+    color: white;
 }
 
 .color-valid {
     background-color: #016400;
+    color: white;
 }
 
 .color-wrong-place {
     background-color: #DAA520;
+    color: white;
 }
 
 .word-block {
